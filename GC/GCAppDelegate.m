@@ -7,12 +7,20 @@
 //
 
 #import "GCAppDelegate.h"
+#import <TestFlight.h>
 
 @implementation GCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+#ifndef TESTING
+    [TestFlight setDeviceIdentifier:[UIDevice currentDevice].uniqueIdentifier];
+#endif
+    
+    [TestFlight takeOff:@"5ea6cf4c-2aad-4306-90eb-8c021467a86d"];
+    
+
     return YES;
 }
 							

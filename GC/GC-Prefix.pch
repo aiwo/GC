@@ -13,3 +13,5 @@
     #import <Foundation/Foundation.h>
     #import "UIView+Additions.h"
 #endif
+
+#define TESTING
