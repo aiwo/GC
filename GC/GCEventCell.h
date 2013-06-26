@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GCCell.h"
 
-@interface GCEventCell : UITableViewCell
+@interface GCEventCell : GCCell
 
 @end

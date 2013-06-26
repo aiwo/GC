@@ -12,6 +12,10 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "UIView+Additions.h"
+    #import "UIViewController(additions).h"
 #endif
 
 #define TESTING
+
+#define kClientId @"350515200115.apps.googleusercontent.com"
+#define kClientSecret @"L9rKDjFJygPqQ6-cEoPOdTtd"

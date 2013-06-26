@@ -1,5 +1,22 @@
 PODS:
   - AFNetworking (1.3.1)
+  - gtm-oauth2 (0.0.1):
+    - gtm-oauth2/Core
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core (0.0.1):
+    - gtm-oauth2/Core/Mac
+    - gtm-oauth2/Core/Touch
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core/Mac (0.0.1):
+    - GTMHTTPFetcher
+    - SBJson
+  - gtm-oauth2/Core/Touch (0.0.1):
+    - GTMHTTPFetcher
+    - SBJson
+  - GTMHTTPFetcher (0.0.1):
+    - SBJson
   - RestKit (0.20.2):
     - RestKit/Core
   - RestKit/Core (0.20.2):
@@ -15,17 +32,22 @@ PODS:
   - RestKit/ObjectMapping (0.20.2)
   - RestKit/Support (0.20.2):
     - TransitionKit (= 1.1.1)
+  - SBJson (3.2)
   - SOCKit (1.1)
   - TestFlightSDK (1.3.0-beta.6)
   - TransitionKit (1.1.1)
 
 DEPENDENCIES:
+  - gtm-oauth2 (~> 0.0.1)
   - RestKit (~> 0.20.2)
   - TestFlightSDK (~> 1.3.0-beta.6)
 
 SPEC CHECKSUMS:
   AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+  gtm-oauth2: c4824003b569bc9b96446661fb92dbc681335499
+  GTMHTTPFetcher: 99f026c2d7afbcf2a051a64a3e81dcaedd060135
   RestKit: e511651e916245fa4becfb0e8f966a1fa021fcd4
+  SBJson: e60b4dc22448c2ae1e754b523a4ab53408e85c8d
   SOCKit: ed67aeeca4a697b63a933229e53f4670d5b9300f
   TestFlightSDK: f3e516c64f61abedeb26a7b184101df54df3db09
   TransitionKit: 3b3836af6887d16a0834fa35031028792d1d5c0c
