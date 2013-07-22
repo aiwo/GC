@@ -36,5 +36,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>gothaprobla.ttf</string>
+		<string>gothaproblaita.ttf</string>
+		<string>gothaprobol.ttf</string>
+		<string>gothaprobolita.ttf</string>
+		<string>gothaproita.ttf</string>
+		<string>gothapromed.ttf</string>
+		<string>gothapromedita.ttf</string>
+		<string>gothapronarbol.ttf</string>
+		<string>gothapronarmed.ttf</string>
+		<string>gothaproreg.ttf</string>
+		<string>gothaprolig.ttf</string>
+		<string>gothaproligita.ttf</string>
+	</array>
 </dict>
 </plist>

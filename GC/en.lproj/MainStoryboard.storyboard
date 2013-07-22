@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZDh-X6-ZZ2">
     <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Title-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="GCViewController" sceneMemberID="viewController">
@@ -12,17 +14,113 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-Bi-8HL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="89" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-Bi-8HL">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GCEventCell" id="sPf-yH-NKE" customClass="GCEventCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="GCEventCell" rowHeight="89" id="sPf-yH-NKE" customClass="GCEventCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYM-UL-hBY">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" type="user" id="Gbp-Nj-EkK"/>
+                                                        <constraint firstAttribute="height" constant="12" id="LVD-9Y-h9Q"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                                    <color key="textColor" red="0.82352941176470584" green="0.83921568627450982" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wI-Ip-lpG">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="kXb-bv-ChE"/>
+                                                        <constraint firstAttribute="width" constant="38" type="user" id="z5S-I0-6qe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="9"/>
+                                                    <color key="textColor" red="0.82352941176470584" green="0.83921568627450982" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="kUi-hD-fye">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="daI-Mh-RmZ"/>
+                                                        <constraint firstAttribute="width" constant="230" type="user" id="pCE-iJ-ABl"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment>
+                                                            <string key="content">Скайп-конференция 
+</string>
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.82352941180000006" green="0.83921568629999999" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="17" name="GothamPro"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="с американцами">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.82352941180000006" green="0.83921568629999999" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="17" name="GothamPro"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" maximumLineHeight="16"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="Sg7-yW-5RD">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="38" id="AzV-Bu-9fq"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment>
+                                                            <string key="content">Обсуждение дизайна приложения 
+</string>
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.82352941180000006" green="0.83921568629999999" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="GothamPro"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="и фирменного стиля Byteriot">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.82352941180000006" green="0.83921568629999999" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="11" name="GothamPro"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" maximumLineHeight="10"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSW-JT-ETo">
+                                                    <color key="backgroundColor" red="0.93725490196078431" green="0.37254901960784315" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="5" id="gBp-TF-yl1"/>
+                                                        <constraint firstAttribute="height" constant="5" id="wWx-m8-cDb"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="4wI-Ip-lpG" firstAttribute="top" secondItem="sPf-yH-NKE" secondAttribute="top" constant="33" id="33o-il-Ud3"/>
+                                            <constraint firstItem="uYM-UL-hBY" firstAttribute="centerY" secondItem="kUi-hD-fye" secondAttribute="centerY" type="default" id="4bp-qY-u4A"/>
+                                            <constraint firstItem="JSW-JT-ETo" firstAttribute="leading" secondItem="sPf-yH-NKE" secondAttribute="leading" constant="12" id="7Xh-gS-et8"/>
+                                            <constraint firstItem="kUi-hD-fye" firstAttribute="leading" secondItem="Sg7-yW-5RD" secondAttribute="leading" type="user" id="9QF-RX-29Z"/>
+                                            <constraint firstItem="JSW-JT-ETo" firstAttribute="top" secondItem="uYM-UL-hBY" secondAttribute="top" type="default" id="Bm9-wv-3aO"/>
+                                            <constraint firstItem="Sg7-yW-5RD" firstAttribute="top" secondItem="sPf-yH-NKE" secondAttribute="top" constant="38" id="Vws-Da-zsb"/>
+                                            <constraint firstItem="kUi-hD-fye" firstAttribute="leading" secondItem="sPf-yH-NKE" secondAttribute="leading" constant="79" id="YWv-P6-uFL"/>
+                                            <constraint firstItem="kUi-hD-fye" firstAttribute="trailing" secondItem="Sg7-yW-5RD" secondAttribute="trailing" type="user" id="bDl-Sc-QZS"/>
+                                            <constraint firstItem="4wI-Ip-lpG" firstAttribute="leading" secondItem="sPf-yH-NKE" secondAttribute="leading" constant="22" id="hXm-3Q-Yg7"/>
+                                            <constraint firstItem="kUi-hD-fye" firstAttribute="top" secondItem="sPf-yH-NKE" secondAttribute="top" constant="8" id="ksm-qx-op9"/>
+                                            <constraint firstItem="uYM-UL-hBY" firstAttribute="leading" secondItem="sPf-yH-NKE" secondAttribute="leading" constant="21" id="srH-vu-inw"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="colorDotView" destination="JSW-JT-ETo" id="50V-7k-YJg"/>
+                                            <outlet property="detailLabel" destination="Sg7-yW-5RD" id="oQs-iq-1G6"/>
+                                            <outlet property="endTimeLabel" destination="4wI-Ip-lpG" id="enj-1A-VUE"/>
+                                            <outlet property="startTimeLabel" destination="uYM-UL-hBY" id="TZb-Vx-K7M"/>
+                                            <outlet property="titleLabel" destination="kUi-hD-fye" id="bzF-Up-vUl"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -39,7 +137,7 @@
                             <constraint firstItem="RrZ-Bi-8HL" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="nhu-xS-1sW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="Q6c-gW-ngh"/>
+                    <navigationItem key="navigationItem" id="Q6c-gW-ngh"/>
                     <connections>
                         <outlet property="tableView" destination="RrZ-Bi-8HL" id="GOl-mz-Jpd"/>
                     </connections>
@@ -67,23 +165,6 @@
             <point key="canvasLocation" x="317" y="61"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="GCEventCell" superclassName="GCCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GCEventCell.h"/>
-        </class>
-        <class className="GCNavigationBar" superclassName="UINavigationBar">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GCNavigationBar.h"/>
-        </class>
-        <class className="GCViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GCViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

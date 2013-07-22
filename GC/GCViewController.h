@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GCViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface GCViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
 
 @end

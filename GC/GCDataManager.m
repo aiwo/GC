@@ -47,6 +47,7 @@ NSString *const kKeychainItemName = @"CalendarSample: Google Calendar";
         self.service.authorizer = [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:kKeychainItemName
                                                                           clientID:kClientId
                                                                       clientSecret:kClientSecret];
+        self.events = [NSMutableDictionary new];
         
     }
     return self;
@@ -84,7 +85,7 @@ NSString *const kKeychainItemName = @"CalendarSample: Google Calendar";
 
 - (GTLCalendarCalendarList *)calendars
 {
-    return self.calendars;
+    return _calendars;
 }
 
 - (GTLCalendarEvents *)eventsForCalendarId:(NSString *)calendarId

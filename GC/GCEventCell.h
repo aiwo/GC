@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "GCCell.h"
 
+@class GTLCalendarEvent;
+
 @interface GCEventCell : GCCell
+
+@property (nonatomic, strong) GTLCalendarEvent *event;
 
 @end

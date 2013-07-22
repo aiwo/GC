@@ -9,6 +9,8 @@
 #import "GCAppDelegate.h"
 #import <TestFlight.h>
 
+#import "GCNavigationBar.h"
+
 @implementation GCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,6 +22,9 @@
     
     [TestFlight takeOff:@"5ea6cf4c-2aad-4306-90eb-8c021467a86d"];
     
+    [[GCNavigationBar appearance] setTitleTextAttributes:@{
+                                     UITextAttributeFont: [UIFont regularFontWithSize:20]
+     }];
 
     return YES;
 }

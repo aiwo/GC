@@ -13,6 +13,9 @@
     #import <Foundation/Foundation.h>
     #import "UIView+Additions.h"
     #import "UIViewController(additions).h"
+    #import "UIFont+CustomFonts.h"
+    #import "UILabel+Additions.h"
+    #import "UIColor+CustomColors.h"
 #endif
 
 #define TESTING

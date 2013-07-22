@@ -48,6 +48,23 @@
 		DA2D6BCD1779FF89006D7D54 /* GTLServiceCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6BB51779FF89006D7D54 /* GTLServiceCalendar.m */; };
 		DA2D6BD0177AEFD7006D7D54 /* GCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6BCF177AEFD7006D7D54 /* GCNavigationBar.m */; };
 		DA2D6BD3177B0E6C006D7D54 /* GCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6BD2177B0E6C006D7D54 /* GCCell.m */; };
+		DA2D6C22177C3F68006D7D54 /* gothaprobla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C16177C3F68006D7D54 /* gothaprobla.ttf */; };
+		DA2D6C23177C3F68006D7D54 /* gothaproblaita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C17177C3F68006D7D54 /* gothaproblaita.ttf */; };
+		DA2D6C24177C3F68006D7D54 /* gothaprobol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C18177C3F68006D7D54 /* gothaprobol.ttf */; };
+		DA2D6C25177C3F68006D7D54 /* gothaprobolita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C19177C3F68006D7D54 /* gothaprobolita.ttf */; };
+		DA2D6C26177C3F68006D7D54 /* gothaproita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C1A177C3F68006D7D54 /* gothaproita.ttf */; };
+		DA2D6C27177C3F68006D7D54 /* gothaprolig.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C1B177C3F68006D7D54 /* gothaprolig.ttf */; };
+		DA2D6C28177C3F68006D7D54 /* gothaproligita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C1C177C3F68006D7D54 /* gothaproligita.ttf */; };
+		DA2D6C29177C3F68006D7D54 /* gothapromed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C1D177C3F68006D7D54 /* gothapromed.ttf */; };
+		DA2D6C2A177C3F68006D7D54 /* gothapromedita.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C1E177C3F68006D7D54 /* gothapromedita.ttf */; };
+		DA2D6C2B177C3F68006D7D54 /* gothapronarbol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C1F177C3F68006D7D54 /* gothapronarbol.ttf */; };
+		DA2D6C2C177C3F68006D7D54 /* gothapronarmed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C20177C3F68006D7D54 /* gothapronarmed.ttf */; };
+		DA2D6C2D177C3F68006D7D54 /* gothaproreg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C21177C3F68006D7D54 /* gothaproreg.ttf */; };
+		DA2D6C33177C413E006D7D54 /* UIFont+CustomFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6C32177C413E006D7D54 /* UIFont+CustomFonts.m */; };
+		DA2D6C54177C50E6006D7D54 /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6C53177C50E6006D7D54 /* UIColor+CustomColors.m */; };
+		DA2D6C5A177C6A81006D7D54 /* UILabel+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6C59177C6A81006D7D54 /* UILabel+Additions.m */; };
+		DA2D6C5C177C89C7006D7D54 /* GCDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2D6C5B177C89C7006D7D54 /* GCDayCell.xib */; };
+		DA2D6C5F177C8D08006D7D54 /* GCDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2D6C5E177C8D08006D7D54 /* GCDayCell.m */; };
 		DA396076177890D900F3A7AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA396075177890D900F3A7AD /* UIKit.framework */; };
 		DA396078177890D900F3A7AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA396077177890D900F3A7AD /* Foundation.framework */; };
 		DA39607A177890D900F3A7AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA396079177890D900F3A7AD /* CoreGraphics.framework */; };
@@ -150,6 +167,27 @@
 		DA2D6BCF177AEFD7006D7D54 /* GCNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNavigationBar.m; sourceTree = "<group>"; };
 		DA2D6BD1177B0E6C006D7D54 /* GCCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCell.h; sourceTree = "<group>"; };
 		DA2D6BD2177B0E6C006D7D54 /* GCCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCell.m; sourceTree = "<group>"; };
+		DA2D6C16177C3F68006D7D54 /* gothaprobla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaprobla.ttf; path = fonts/gothaprobla.ttf; sourceTree = "<group>"; };
+		DA2D6C17177C3F68006D7D54 /* gothaproblaita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaproblaita.ttf; path = fonts/gothaproblaita.ttf; sourceTree = "<group>"; };
+		DA2D6C18177C3F68006D7D54 /* gothaprobol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaprobol.ttf; path = fonts/gothaprobol.ttf; sourceTree = "<group>"; };
+		DA2D6C19177C3F68006D7D54 /* gothaprobolita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaprobolita.ttf; path = fonts/gothaprobolita.ttf; sourceTree = "<group>"; };
+		DA2D6C1A177C3F68006D7D54 /* gothaproita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaproita.ttf; path = fonts/gothaproita.ttf; sourceTree = "<group>"; };
+		DA2D6C1B177C3F68006D7D54 /* gothaprolig.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaprolig.ttf; path = fonts/gothaprolig.ttf; sourceTree = "<group>"; };
+		DA2D6C1C177C3F68006D7D54 /* gothaproligita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaproligita.ttf; path = fonts/gothaproligita.ttf; sourceTree = "<group>"; };
+		DA2D6C1D177C3F68006D7D54 /* gothapromed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothapromed.ttf; path = fonts/gothapromed.ttf; sourceTree = "<group>"; };
+		DA2D6C1E177C3F68006D7D54 /* gothapromedita.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothapromedita.ttf; path = fonts/gothapromedita.ttf; sourceTree = "<group>"; };
+		DA2D6C1F177C3F68006D7D54 /* gothapronarbol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothapronarbol.ttf; path = fonts/gothapronarbol.ttf; sourceTree = "<group>"; };
+		DA2D6C20177C3F68006D7D54 /* gothapronarmed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothapronarmed.ttf; path = fonts/gothapronarmed.ttf; sourceTree = "<group>"; };
+		DA2D6C21177C3F68006D7D54 /* gothaproreg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = gothaproreg.ttf; path = fonts/gothaproreg.ttf; sourceTree = "<group>"; };
+		DA2D6C31177C413E006D7D54 /* UIFont+CustomFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CustomFonts.h"; sourceTree = "<group>"; };
+		DA2D6C32177C413E006D7D54 /* UIFont+CustomFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CustomFonts.m"; sourceTree = "<group>"; };
+		DA2D6C52177C50E6006D7D54 /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		DA2D6C53177C50E6006D7D54 /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		DA2D6C58177C6A81006D7D54 /* UILabel+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Additions.h"; sourceTree = "<group>"; };
+		DA2D6C59177C6A81006D7D54 /* UILabel+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Additions.m"; sourceTree = "<group>"; };
+		DA2D6C5B177C89C7006D7D54 /* GCDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDayCell.xib; sourceTree = "<group>"; };
+		DA2D6C5D177C8D07006D7D54 /* GCDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDayCell.h; sourceTree = "<group>"; };
+		DA2D6C5E177C8D08006D7D54 /* GCDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDayCell.m; sourceTree = "<group>"; };
 		DA396072177890D900F3A7AD /* GC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA396075177890D900F3A7AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA396077177890D900F3A7AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -199,6 +237,9 @@
 				DA2D6BCF177AEFD7006D7D54 /* GCNavigationBar.m */,
 				DA3960981778942000F3A7AD /* GCPullView.h */,
 				DA3960991778942000F3A7AD /* GCPullView.m */,
+				DA2D6C5D177C8D07006D7D54 /* GCDayCell.h */,
+				DA2D6C5E177C8D08006D7D54 /* GCDayCell.m */,
+				DA2D6C5B177C89C7006D7D54 /* GCDayCell.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -310,6 +351,25 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		DA2D6BFD177C3D65006D7D54 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DA2D6C16177C3F68006D7D54 /* gothaprobla.ttf */,
+				DA2D6C17177C3F68006D7D54 /* gothaproblaita.ttf */,
+				DA2D6C18177C3F68006D7D54 /* gothaprobol.ttf */,
+				DA2D6C19177C3F68006D7D54 /* gothaprobolita.ttf */,
+				DA2D6C1A177C3F68006D7D54 /* gothaproita.ttf */,
+				DA2D6C1B177C3F68006D7D54 /* gothaprolig.ttf */,
+				DA2D6C1C177C3F68006D7D54 /* gothaproligita.ttf */,
+				DA2D6C1D177C3F68006D7D54 /* gothapromed.ttf */,
+				DA2D6C1E177C3F68006D7D54 /* gothapromedita.ttf */,
+				DA2D6C1F177C3F68006D7D54 /* gothapronarbol.ttf */,
+				DA2D6C20177C3F68006D7D54 /* gothapronarmed.ttf */,
+				DA2D6C21177C3F68006D7D54 /* gothaproreg.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		DA396069177890D900F3A7AD = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +419,7 @@
 		DA39607C177890D900F3A7AD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA2D6BFD177C3D65006D7D54 /* Fonts */,
 				DA39607D177890D900F3A7AD /* GC-Info.plist */,
 				DA39607E177890D900F3A7AD /* InfoPlist.strings */,
 				DA396081177890D900F3A7AD /* main.m */,
@@ -377,6 +438,12 @@
 				DA39609C1778949100F3A7AD /* UIView+Additions.m */,
 				DABD5ED21779FB0E00ACAFFC /* UIViewController(additions).h */,
 				DABD5ED31779FB0E00ACAFFC /* UIViewController(additions).m */,
+				DA2D6C31177C413E006D7D54 /* UIFont+CustomFonts.h */,
+				DA2D6C32177C413E006D7D54 /* UIFont+CustomFonts.m */,
+				DA2D6C52177C50E6006D7D54 /* UIColor+CustomColors.h */,
+				DA2D6C53177C50E6006D7D54 /* UIColor+CustomColors.m */,
+				DA2D6C58177C6A81006D7D54 /* UILabel+Additions.h */,
+				DA2D6C59177C6A81006D7D54 /* UILabel+Additions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -460,6 +527,19 @@
 				DA39608A177890D900F3A7AD /* Default@2x.png in Resources */,
 				DA39608C177890D900F3A7AD /* Default-568h@2x.png in Resources */,
 				DA39608F177890D900F3A7AD /* MainStoryboard.storyboard in Resources */,
+				DA2D6C22177C3F68006D7D54 /* gothaprobla.ttf in Resources */,
+				DA2D6C23177C3F68006D7D54 /* gothaproblaita.ttf in Resources */,
+				DA2D6C24177C3F68006D7D54 /* gothaprobol.ttf in Resources */,
+				DA2D6C25177C3F68006D7D54 /* gothaprobolita.ttf in Resources */,
+				DA2D6C26177C3F68006D7D54 /* gothaproita.ttf in Resources */,
+				DA2D6C27177C3F68006D7D54 /* gothaprolig.ttf in Resources */,
+				DA2D6C28177C3F68006D7D54 /* gothaproligita.ttf in Resources */,
+				DA2D6C29177C3F68006D7D54 /* gothapromed.ttf in Resources */,
+				DA2D6C2A177C3F68006D7D54 /* gothapromedita.ttf in Resources */,
+				DA2D6C2B177C3F68006D7D54 /* gothapronarbol.ttf in Resources */,
+				DA2D6C2C177C3F68006D7D54 /* gothapronarmed.ttf in Resources */,
+				DA2D6C2D177C3F68006D7D54 /* gothaproreg.ttf in Resources */,
+				DA2D6C5C177C89C7006D7D54 /* GCDayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +628,10 @@
 				DA2D6BCD1779FF89006D7D54 /* GTLServiceCalendar.m in Sources */,
 				DA2D6BD0177AEFD7006D7D54 /* GCNavigationBar.m in Sources */,
 				DA2D6BD3177B0E6C006D7D54 /* GCCell.m in Sources */,
+				DA2D6C33177C413E006D7D54 /* UIFont+CustomFonts.m in Sources */,
+				DA2D6C54177C50E6006D7D54 /* UIColor+CustomColors.m in Sources */,
+				DA2D6C5A177C6A81006D7D54 /* UILabel+Additions.m in Sources */,
+				DA2D6C5F177C8D08006D7D54 /* GCDayCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,28 +35,29 @@
 {
     [super viewDidLoad];
     
-    self.pullView = [[GCPullView alloc] initWithFrame:CGRectMake(0, self.view.height-20, self.view.width, 200)];
-    [self.view addSubview:self.pullView];
+    self.pullView = [[GCPullView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 100)];
+    self.pullView.delegate = self;
+    [self.view insertSubview:self.pullView aboveSubview:self.tableView];
     
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
     [self.pullView addGestureRecognizer:panRecognizer];
-    
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.titleView = view;
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.pullView.top = self.view.height-20;
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [[GCDataManager sharedManager] authorize];
-    [[GCDataManager sharedManager] getCalendarsOnSucess:^{
+    [self.dataManager authorize];
+    [self.dataManager getCalendarsOnSucess:^{
         self.activeCalendar = [GCDataManager sharedManager].calendars[0];
+        [self.dataManager getEventsForCalendarId:self.activeCalendar.identifier onSuccess:^{
+            [self.tableView reloadData];
+        } onFailure:[self defaultFailureBlock]];
     } onFailure:[self defaultFailureBlock]];
 }
 
@@ -74,6 +75,19 @@
     return [GCDataManager sharedManager];
 }
 
+#pragma mark - UIScrollViewDelegate
+
+CGPoint lastOffset;
+NSTimeInterval lastOffsetCapture;
+BOOL isScrollingFast;
+
+- (void) scrollViewDidScroll:(UIScrollView *)scrollView {
+    float point = scrollView.contentOffset.x * 2 + lastOffset.x;
+    CGPoint currentOffset = scrollView.contentOffset;
+
+    lastOffset = currentOffset;
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -84,6 +98,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GCEventCell *cell = [tableView dequeueReusableCellWithIdentifier:[GCEventCell reuseIdentifier]];
+    cell.event = [self.dataManager eventsForCalendarId:self.activeCalendar.identifier][indexPath.row];
     
     return cell;
 }
@@ -98,12 +113,18 @@
     
     if (recognizer.state == UIGestureRecognizerStateChanged) {
         
+        if (fabs(tr.y) < 10)
+            return;
+        
         if (self.pullView.state == GCPullViewStateClosed)
             self.pullView.top = self.view.height-20+tr.y;
         else
             self.pullView.top = self.view.height-100+tr.y;
         
     } else if (recognizer.state == UIGestureRecognizerStateEnded) {
+        
+        if (fabs(tr.y) < 10)
+            return;
         
         NSInteger destinationPoint = self.view.height-20;
         if (fabs(tr.y) > 100)

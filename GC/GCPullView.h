@@ -13,12 +13,15 @@ typedef enum {
     GCPullViewStateOpened = 1
 } GCPullViewState;
 
-@interface GCPullView : UIView
+@interface GCPullView : UIView <UIScrollViewDelegate>
 
 @property (nonatomic, assign) GCPullViewState state;
+@property (nonatomic, assign) id<UIScrollViewDelegate> delegate;
 
 @end
 
-@interface GCBottomCalendarView : UIScrollView
+@interface GCBottomCalendarView : UIView
+
+- (void)setDaysWithWeekNumber:(int)weekNumber;
 
 @end

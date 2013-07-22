@@ -19,13 +19,14 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)layoutSubviews
 {
-    // Drawing code
+//    for (UIView *view in self.subviews) {
+//        if ([view isKindOfClass:[UILabel class]]) {
+//            view.centerY = self.centerY;
+//            view.backgroundColor = [UIColor whiteColor];
+//        }
+//    }
 }
-*/
 
 @end
