@@ -37,8 +37,8 @@
 
 - (void)setDelegate:(id<UIScrollViewDelegate>)delegate
 {
-    _delegate = delegate;
-    self.bottomView.delegate = self.delegate;
+//    _delegate = delegate;
+//    self.bottomView.delegate = self.delegate;
 }
 
 - (void)setState:(GCPullViewState)state
@@ -63,10 +63,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.showsVerticalScrollIndicator = NO;
-        self.showsHorizontalScrollIndicator = YES;
-        self.alwaysBounceHorizontal = YES;
-        self.pagingEnabled = YES;
+//        self.showsVerticalScrollIndicator = NO;
+//        self.showsHorizontalScrollIndicator = YES;
+//        self.alwaysBounceHorizontal = YES;
+//        self.pagingEnabled = YES;
     }
     
     return self;
@@ -87,7 +87,6 @@
             [self addSubview:separator];
         }
     }
-    self.contentSize = CGSizeMake(self.width, self.height);
 }
 
 - (NSArray *)allDatesInWeek:(int)weekNumber {
